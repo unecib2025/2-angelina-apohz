@@ -1,0 +1,49 @@
+#1
+'''
+correct_password = "admin123"
+password = ""
+
+while password != correct_password:
+    password = input("Введите пароль: ")
+
+print("Доступ разрешён")
+'''
+#2
+'''
+login = ""
+
+while len(login) < 6:
+    login = input("Введите логин: ")
+
+print("Логин принят")
+'''
+#3
+'''
+correct_password = "admin123"
+
+for attempt in range(3):
+    password = input("Введите пароль: ")
+    if password == correct_password:
+        print("Вход выполнен успешно")
+        break
+else:
+    print("Доступ заблокирован")
+'''
+#4
+'''
+for i in range(1, 11):
+    print(f"Запись журнала №{i}")
+'''
+#5
+'''
+hashes_original = ["1a", "2b", "3c", "4d"]
+hashes_current  = ["1a", "2x", "3c", "4d"]
+
+i = 0
+while i < len(hashes_original):
+    if hashes_original[i] == hashes_current[i]:
+        print(f"Файл {i+1} не изменён")
+    else:
+        print(f"Файл {i+1} повреждён")
+    i += 1
+'''
